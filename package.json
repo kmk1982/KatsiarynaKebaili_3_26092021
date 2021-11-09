@@ -1,0 +1,11 @@
+{
+  "name": "katsiarynakebaili_3_26092021",
+  "version": "1.0.0",
+  "description": "Projet 3 Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style expanded"
+  },
+  "author": "",
+  "license": "ISC"
+}
