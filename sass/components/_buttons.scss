@@ -1,0 +1,10 @@
+.bouton{
+    @include bouton_project;
+    z-index: 1;
+    position: relative;
+    &:hover{
+        &::after{ 
+            opacity: 1;
+        }
+    }
+} 

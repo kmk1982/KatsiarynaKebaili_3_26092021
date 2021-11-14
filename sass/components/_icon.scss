@@ -1,0 +1,42 @@
+.heart{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    & .far{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px;
+        font-size: $texte-titre;
+    }
+    & .fas{
+        top: 0;
+        left: 0;
+        padding: 5px;
+        font-size: $texte-titre;
+        background: linear-gradient( 
+            $couleur-primaire,
+            $couleur-secondaire
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        animation-fill-mode: forwards;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+    }
+    &:hover{
+        & .far{
+            opacity: 0;
+            transition:opacity 0.5s;
+            transition-delay: 0.5s;
+        }        
+        & .fas{   
+            z-index: 1;
+            overflow: hidden;
+            animation: progressive 1s ease-in 50ms both;
+            animation-fill-mode: forwards;
+        }
+    }
+}  
