@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    & .fas{
+        padding-right: 10px;
+    }
+    & .fa-utensils{
+        padding-right: 15px;
+    }
+    & a{
+        color: white;
+    }
+}
